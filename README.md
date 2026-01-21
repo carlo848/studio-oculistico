@@ -13,6 +13,7 @@ Sito web professionale dello Studio Oculistico Rapisarda - Dr. Carlo Rapisarda a
 
 ✅ Home con presentazione del studio
 ✅ 6 Servizi oculistici descritti in dettaglio
+✅ 12 Prestazioni disponibili (incluso YAG Laser, Ecografia, Test Ipovisione)
 ✅ Sezione "Chi Siamo" con valori dello studio
 ✅ Orari di apertura e prenotazioni
 ✅ Sezione contatti con modulo interattivo
@@ -65,7 +66,7 @@ python3 -m http.server 8000
 2. Prescrizione Occhiali e Lenti a Contatto
 3. Diagnostica Avanzata
 4. Consulenza Specialistica
-5. Selezione Occhiali da Sole
+5. Microchirurgia e Laser
 6. Controlli Pediatrici
 
 ## 📧 Contatti dello Sviluppatore

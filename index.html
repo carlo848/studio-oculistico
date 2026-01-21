@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studio Oculistico Rapisarda - Optometria e Oftalmologia</title>
+    <title>Studio Oculistico Rapisarda - Oftalmologia</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,6 +14,9 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#servizi">Servizi</a></li>
+                <li><a href="#interventi">Interventi</a></li>
+                <li><a href="#prestazioni">Prestazioni</a></li>
+                <li><a href="#curriculum">Curriculum</a></li>
                 <li><a href="#orari">Orari</a></li>
                 <li><a href="#chi-siamo">Chi Siamo</a></li>
                 <li><a href="#contatti">Contatti</a></li>
@@ -26,6 +29,7 @@
         <div class="container">
             <div class="hero-content">
                 <h1>Benvenuti allo Studio Oculistico Rapisarda</h1>
+                <p class="hero-subtitle">Dott. Carlo Rapisarda</p>
                 <p>La tua visione è la nostra priorità</p>
                 <button class="btn btn-primary" onclick="document.getElementById('contatti').scrollIntoView({behavior: 'smooth'})">Prenota una Visita</button>
             </div>
@@ -58,19 +62,67 @@
                     <p>Valutazione e trattamento di condizioni oculari complesse con esperienza clinica consolidata.</p>
                 </div>
                 <div class="servizio-card">
-                    <div class="servizio-icon">🕶️</div>
-                    <h3>Selezione Occhiali da Sole</h3>
-                    <p>Scelta di occhiali da sole protettivi e stilosi per proteggere gli occhi dai raggi UV.</p>
+                    <div class="servizio-icon">🏥</div>
+                    <h3>Microchirurgia e Laser</h3>
+                    <p>Interventi microchirurgici e trattamenti laser all'avanguardia per patologie oculari complesse.</p>
                 </div>
                 <div class="servizio-card">
-                    <div class="servizio-icon">👶</div>
+                    <div class="servizio-icon">�👶</div>
                     <h3>Controlli Pediatrici</h3>
                     <p>Esami specializzati per bambini e adolescenti, fondamentali per lo sviluppo visivo.</p>
                 </div>
             </div>
         </div>
     </section>
-
+    <!-- Interventi Chirurgici Section -->
+    <section id="interventi" class="interventi">
+        <div class="container">
+            <h2>Interventi Chirurgici Eseguiti</h2>
+            <p class="interventi-intro">Tra gli interventi eseguiti con successo:</p>
+            <div class="interventi-grid">
+                <div class="intervento-card">
+                    <div class="intervento-icon">🔬</div>
+                    <h4>CROSS Linking Corneale</h4>
+                    <p>Trattamento per il cheratocono e l'ectasia corneale post-LASIK</p>
+                </div>
+                <div class="intervento-card">
+                    <div class="intervento-icon">✨</div>
+                    <h4>TRANS PRK</h4>
+                    <p>Chirurgia refrattiva superficiale con recupero visivo rapido</p>
+                </div>
+                <div class="intervento-card">
+                    <div class="intervento-icon">⚡</div>
+                    <h4>FEMTO LASIK</h4>
+                    <p>Chirurgia refrattiva d'eccellenza con femtolaser di ultima generazione</p>
+                </div>
+                <div class="intervento-card">
+                    <div class="intervento-icon">👁️</div>
+                    <h4>Chirurgia Refrattiva</h4>
+                    <p>Correzione permanente di miopia, ipermetropia e astigmatismo</p>
+                </div>
+                <div class="intervento-card">
+                    <div class="intervento-icon">💎</div>
+                    <h4>Chirurgia della Cataratta</h4>
+                    <p>Intervento mini-invasivo con impianto di lente intraoculare</p>
+                </div>
+                <div class="intervento-card">
+                    <div class="intervento-icon">🌟</div>
+                    <h4>Impianto di Cristallini Premium</h4>
+                    <p>Lenti intraoculari avanzate per una visione ottimale a tutte le distanze</p>
+                </div>
+                <div class="intervento-card">
+                    <div class="intervento-icon">🔧</div>
+                    <h4>Iniezioni Intravitreali</h4>
+                    <p>Trattamento farmacologico per degenerazione maculare e retinopatia diabetica</p>
+                </div>
+                <div class="intervento-card">
+                    <div class="intervento-icon">🏥</div>
+                    <h4>Chirurgia Mini-invasiva del Glaucoma</h4>
+                    <p>Procedure innovative a bassa invasività per il controllo della pressione oculare</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Orari Section -->
     <section id="orari" class="orari">
         <div class="container">
@@ -78,38 +130,163 @@
             <div class="orari-content">
                 <div class="orari-table">
                     <div class="orario-row">
-                        <div class="giorno">Lunedì</div>
-                        <div class="ore">09:00 - 13:00 / 15:00 - 19:00</div>
+                        <div class="giorno">Lunedì - Venerdì</div>
+                        <div class="ore">16:00 - 19:00</div>
                     </div>
                     <div class="orario-row">
-                        <div class="giorno">Martedì</div>
-                        <div class="ore">09:00 - 13:00 / 15:00 - 19:00</div>
+                        <div class="giorno">Sabato</div>
+                        <div class="ore">Chiuso</div>
                     </div>
                     <div class="orario-row">
-                        <div class="giorno">Mercoledì</div>
-                        <div class="ore">09:00 - 13:00 / 15:00 - 19:00</div>
-                    </div>
-                    <div class="orario-row">
-                        <div class="giorno">Giovedì</div>
-                        <div class="ore">09:00 - 13:00 / 15:00 - 19:00</div>
-                    </div>
-                    <div class="orario-row">
-                        <div class="giorno">Venerdì</div>
-                        <div class="ore">09:00 - 13:00 / 15:00 - 19:00</div>
-                    </div>
-                    <div class="orario-row">
-                        <div class="giorno\">Sabato</div>
-                        <div class="ore">09:00 - 13:00</div>
-                    </div>
-                    <div class="orario-row\">
-                        <div class="giorno\">Domenica</div>
-                        <div class="ore\">Chiuso</div>
+                        <div class="giorno">Domenica</div>
+                        <div class="ore">Chiuso</div>
                     </div>
                 </div>
-                <div class="orari-nota\">
-                    <p><strong>📅 Prenotazioni:</strong> Lunedì - Venerdì dalle 16:00 alle 19:00</p>
+                <div class="orari-nota">
+                    <p><strong>📅 Orari di Apertura:</strong> Lunedì - Venerdì 16:00 - 19:00</p>
                     <p><strong>💬 Come prenotare:</strong> Chiama il <a href="tel:+39954315000">095 431 5000</a></p>
                     <p><strong>🚨 Emergenze:</strong> Contattaci per assistenza urgente</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prestazioni Section -->
+    <section id="prestazioni" class="prestazioni">
+        <div class="container">
+            <h2>Prestazioni Disponibili</h2>
+            <div class="prestazioni-grid">
+                <div class="prestazione-item">
+                    <div class="prestazione-icon">📊</div>
+                    <h4>Misurazione Pressione Intraoculare</h4>
+                    <p>Tonometria per il controllo della pressione oculare</p>
+                </div>
+                <div class="prestazione-item">
+                    <div class="prestazione-icon">👁️</div>
+                    <h4>Visus e Refrazione</h4>
+                    <p>Test visivo completo e valutazione della refrazione</p>
+                </div>
+                <div class="prestazione-item">
+                    <div class="prestazione-icon">🔬</div>
+                    <h4>Topografia Corneale</h4>
+                    <p>Mappatura della curvatura corneale</p>
+                </div>
+                <div class="prestazione-item">
+                    <div class="prestazione-icon">📡</div>
+                    <h4>OCT (Tomografia Ottica Coerente)</h4>
+                    <p>Imaging ad alta risoluzione della retina</p>
+                </div>
+                <div class="prestazione-item">
+                    <div class="prestazione-icon">🎯</div>
+                    <h4>Esame del Campo Visivo</h4>
+                    <p>Valutazione della visione periferica</p>
+                </div>
+                <div class="prestazione-item">
+                    <div class="prestazione-icon">📏</div>
+                    <h4>Biometria</h4>
+                    <p>Misurazione delle dimensioni oculari</p>
+                </div>
+                <div class="prestazione-item">
+                    <div class="prestazione-icon">🔍</div>
+                    <h4>Esame della Retina</h4>
+                    <p>Valutazione approfondita della retina</p>
+                </div>
+                <div class="prestazione-item">
+                    <div class="prestazione-icon">⚪</div>
+                    <h4>Test di Contrasto</h4>
+                    <p>Valutazione della sensibilità al contrasto</p>
+                </div>
+                <div class="prestazione-item">
+                    <div class="prestazione-icon">💡</div>
+                    <h4>Esame dei Difetti Refrattivi</h4>
+                    <p>Diagnosi di miopia, ipermetropia, astigmatismo</p>
+                </div>
+                <div class="prestazione-item">
+                    <div class="prestazione-icon">⚕️</div>
+                    <h4>YAG Laser</h4>
+                    <p>Trattamento laser per cataratta secondaria e glaucoma</p>
+                </div>
+                <div class="prestazione-item">
+                    <div class="prestazione-icon">🔊</div>
+                    <h4>Ecografia Oculare</h4>
+                    <p>Imaging ultrasonica per patologie oculari complesse</p>
+                </div>
+                <div class="prestazione-item">
+                    <div class="prestazione-icon">🌟</div>
+                    <h4>Test per Ipovisione</h4>
+                    <p>Valutazione e supporto per bassa visione con ausili ottici</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Section -->
+    <section id="curriculum" class="curriculum">
+        <div class="container">
+            <h2>Curriculum Vitae</h2>
+            <div class="curriculum-content">
+                <div class="curriculum-item">
+                    <div class="curriculum-icon">🎓</div>
+                    <div class="curriculum-text">
+                        <h4>Formazione Accademica</h4>
+                        <p>Laureato con lode in Medicina e Chirurgia. Specializzato con lode in Oftalmologia.</p>
+                    </div>
+                </div>
+
+                <div class="curriculum-item">
+                    <div class="curriculum-icon">📚</div>
+                    <div class="curriculum-text">
+                        <h4>Pubblicazioni Scientifiche</h4>
+                        <p>Ha pubblicato innumerevoli lavori su riviste nazionali e internazionali nel campo oftalmologico.</p>
+                    </div>
+                </div>
+
+                <div class="curriculum-item">
+                    <div class="curriculum-icon">✈️</div>
+                    <div class="curriculum-text">
+                        <h4>Fellowship Internazionali</h4>
+                        <p>Ha frequentato corsi residenziali e fellowship all'estero presso: Bascom Palmer di Miami, Agarwal Eye Hospital di Chennai, European School di Lugano.</p>
+                    </div>
+                </div>
+
+                <div class="curriculum-item">
+                    <div class="curriculum-icon">🌍</div>
+                    <div class="curriculum-text">
+                        <h4>Missioni Umanitarie</h4>
+                        <p>Ha partecipato come chirurgo oculista a missioni umanitarie in Nicaragua presso gli ospedali di Jinotega e San Rafael.</p>
+                    </div>
+                </div>
+
+                <div class="curriculum-item">
+                    <div class="curriculum-icon">💡</div>
+                    <div class="curriculum-text">
+                        <h4>Ricerca e Borse di Studio</h4>
+                        <p>Ha vinto una borsa di studio per il trattamento delle maculopatie, con pubblicazione dei risultati su riviste internazionali.</p>
+                    </div>
+                </div>
+
+                <div class="curriculum-item">
+                    <div class="curriculum-icon">👨‍🏫</div>
+                    <div class="curriculum-text">
+                        <h4>Ruolo Accademico</h4>
+                        <p>Ha svolto il ruolo di Professore in Anatomia e Fisiologia Oculare nei Corsi di Ottica e di Optometria.</p>
+                    </div>
+                </div>
+
+                <div class="curriculum-item">
+                    <div class="curriculum-icon">🏥</div>
+                    <div class="curriculum-text">
+                        <h4>Attività Clinica</h4>
+                        <p>Attualmente esegue interventi chirurgici in regime convenzionato o privato presso Policlinico Morgagni e altri centri di Eccellenza.</p>
+                    </div>
+                </div>
+
+                <div class="curriculum-item">
+                    <div class="curriculum-icon">👨‍⚕️</div>
+                    <div class="curriculum-text">
+                        <h4>Specializzazioni Attuali</h4>
+                        <p>Si occupa di oftalmologia pediatrica, ipovisione e casi complessi presso Unione Italiana Ciechi di Catania.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -120,10 +297,14 @@
         <div class="container">
             <h2>Chi Siamo</h2>
             <div class="chi-siamo-content">
+                <div class="chi-siamo-image">
+                    <img src="https://images.unsplash.com/photo-1576091160550-112173f7f869?w=500&h=600&fit=crop" alt="Dr. Carlo Rapisarda" class="doctor-image">
+                    <div class="image-caption">Dr. Carlo Rapisarda<br>Oculista Specializzato</div>
+                </div>
                 <div class="testo">
                     <h3>Dr. Carlo Rapisarda</h3>
                     <p>
-                        Con anni di esperienza nel campo dell'optometria e dell'oftalmologia, lo Studio Oculistico Rapisarda 
+                        Con anni di esperienza nel campo dell'oftalmologia, lo Studio Oculistico Rapisarda 
                         è dedicato a fornire la migliore assistenza visiva ai nostri pazienti.
                     </p>
                     <p>
@@ -136,17 +317,17 @@
                         priorità principale.
                     </p>
                 </div>
-                <div class="valori">
-                    <h3>I Nostri Valori</h3>
-                    <ul>
-                        <li>✓ Qualità dell'assistenza medica</li>
-                        <li>✓ Professionalità e esperienza</li>
-                        <li>✓ Accoglienza e disponibilità</li>
-                        <li>✓ Tecnologie diagnostiche moderne</li>
-                        <li>✓ Attenzione personalizzata</li>
-                        <li>✓ Competenza continua</li>
-                    </ul>
-                </div>
+            </div>
+            <div class="valori">
+                <h3>I Nostri Valori</h3>
+                <ul>
+                    <li>✓ Qualità dell'assistenza medica</li>
+                    <li>✓ Professionalità e esperienza</li>
+                    <li>✓ Accoglienza e disponibilità</li>
+                    <li>✓ Tecnologie diagnostiche moderne</li>
+                    <li>✓ Attenzione personalizzata</li>
+                    <li>✓ Competenza continua</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -190,6 +371,12 @@
                 </form>
                 <div id="formMessage" class="form-message"></div>
             </div>
+
+            <!-- Google Maps -->
+            <div class="mappa-container">
+                <h3>Dove Siamo</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3106.5267843226057!2d15.08526!3d37.50264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1313ea64ba6c0001%3A0x1000000!2sVia%20Milano%2C%203%2C%2095100%20Catania%2C%20CT!5e0!3m2!1sit!2sit!4v1643200000000" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="google-maps"></iframe>
+            </div>
         </div>
     </section>
 
@@ -210,7 +397,7 @@
     <footer class="footer">
         <div class="container">
             <p>&copy; 2026 Studio Oculistico Rapisarda - Tutti i diritti riservati</p>
-            <p>Dr. Carlo Rapisarda - Optometrista e Oculista</p>
+            <p>Dr. Carlo Rapisarda - Oculista</p>
         </div>
     </footer>
 
