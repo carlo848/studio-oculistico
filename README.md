@@ -5,7 +5,7 @@ Sito web professionale dello Studio Oculistico Rapisarda - Dr. Carlo Rapisarda a
 ## 📍 Contatti
 
 - **Indirizzo:** Via Milano, 3 - 95100 Catania, CT
-- **Telefono:** 095 431 5000
+- **Telefono:** 095 431 500
 - **Email:** rapisarda.carlo@alice.it
 - **Facebook:** https://www.facebook.com/oculistarapisarda/
 
