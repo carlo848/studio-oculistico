@@ -390,7 +390,50 @@
             <p>Dr. Carlo Rapisarda - Oculista -   cookie policy and privacy policy</p>
         </div>
     </footer>
-
+<!-- COOKIE & PRIVACY POPUP START -->
+<div id="cookie-privacy-banner" style="position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#f9f9f9;border:1px solid #bbb;box-shadow:0 2px 18px #0003;border-radius:8px;max-width:340px;padding:20px;z-index:9999;font-family:sans-serif;display:none">
+  <div style="font-size:16px;margin-bottom:10px">
+    Questo sito utilizza cookie tecnici e, previo consenso, cookie di profilazione.<br>
+    Per maggiori informazioni, leggi la <a href="#" onclick="showPolicy('privacy');return false;" style="color:#369;text-decoration:underline;">Privacy Policy</a>
+    e la <a href="#" onclick="showPolicy('cookie');return false;" style="color:#369;text-decoration:underline;">Cookie Policy</a>.
+  </div>
+  <div style="text-align:right;margin-top:12px">
+    <button onclick="acceptCookies()" style="background:#369;color:#fff;border:none;border-radius:3px;padding:8px 16px;cursor:pointer;margin-right:6px;">Accetta</button>
+    <button onclick="closeBanner()" style="background:#eee;border:none;border-radius:3px;padding:8px 16px;cursor:pointer;">Rifiuta</button>
+  </div>
+</div>
+<!-- Modals -->
+<div id="policy-modal" style="display:none;position:fixed;top:0;left:0;right:0;bottom:0;z-index:10000;background:rgba(0,0,0,0.7);">
+  <div id="policy-content" style="max-width:500px;margin:60px auto;background:#fff;padding:34px 28px 25px;border-radius:10px;position:relative;box-shadow:0 8px 32px #0006;">
+    <button onclick="closePolicy()" style="position:absolute;top:10px;right:12px;font-size:20px;background:transparent;border:none;cursor:pointer;">&times;</button>
+    <div id="policy-text" style="font-size:1rem;line-height:1.4"></div>
+  </div>
+</div>
+<script>
+function showPolicy(type) {
+  var privacy = `<h2>Privacy Policy</h2>
+  <p>Ai sensi del Regolamento UE 2016/679 (GDPR), ti informiamo che i tuoi dati raccolti tramite eventuali form saranno trattati solo per rispondere alle tue richieste. Nessun dato sarà ceduto a terzi senza consenso. Puoi chiedere la modifica o cancellazione dei dati scrivendo a <a href='mailto:rapisarda.carlo@alice.it'>rapisarda.carlo@alice.it</a>.</p>`;
+  var cookie = `<h2>Cookie Policy</h2>
+  <p>Questo sito utilizza cookie tecnici necessari al funzionamento e, solo previo consenso, cookie di profilazione. Puoi modificare o revocare il consenso in ogni momento. Per disattivare i cookie modifica le impostazioni del tuo browser.</p>`;
+  document.getElementById('policy-text').innerHTML = (type==='privacy') ? privacy : cookie;
+  document.getElementById('policy-modal').style.display = 'block';
+}
+function closePolicy() { document.getElementById('policy-modal').style.display = 'none'; }
+function acceptCookies() {
+  localStorage.setItem('cookieBanner','accepted');
+  document.getElementById('cookie-privacy-banner').style.display='none';
+}
+function closeBanner() {
+  localStorage.setItem('cookieBanner','refused');
+  document.getElementById('cookie-privacy-banner').style.display='none';
+}
+window.addEventListener('DOMContentLoaded',function(){
+  if(!localStorage.getItem('cookieBanner')) {
+    document.getElementById('cookie-privacy-banner').style.display = 'block';
+  }
+});
+</script>
+<!-- COOKIE & PRIVACY POPUP END -->
     <script src="script.js"></script>
 </body>
 </html>
